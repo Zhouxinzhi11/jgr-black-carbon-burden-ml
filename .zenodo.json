@@ -1,0 +1,44 @@
+{
+  "title": "Code and Public Aggregate Source Data for: Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment",
+  "upload_type": "software",
+  "description": "Author-written code, manifests, environment files, and public aggregate source data. Code is MIT licensed; public aggregate results and public table/figure source-data CSV files are CC BY 4.0 as specified in LICENSES.md. Restricted fused derivatives are excluded.",
+  "creators": [
+    {
+      "name": "Zhou, Xinzhi",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences; School of Emergency Management Science and Engineering, University of Chinese Academy of Sciences"
+    },
+    {
+      "name": "Li, Zhengqiang",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences; State Key Laboratory of Spatial Datum, Faculty of Geographical Science and Engineering, Henan University"
+    },
+    {
+      "name": "Cai, Qixiang",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences"
+    }
+  ],
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "MIT",
+  "doi": "10.5281/zenodo.23139187",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.23139189",
+      "relation": "isSupplementedBy",
+      "scheme": "doi"
+    }
+  ],
+  "keywords": [
+    "black carbon",
+    "column burden",
+    "machine learning",
+    "atmospheric science",
+    "reproducible research"
+  ],
+  "language": "eng",
+  "notes": "The Zenodo record uses MIT as the software-level license. Public CSV files under results/ and figure_source_data/ are separately licensed CC BY 4.0; see LICENSES.md."
+}

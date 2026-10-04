@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+reproduced/
+private_config.yaml
+private_data/
+private_runs/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.nc
+*.nc4
+*.zarr/
