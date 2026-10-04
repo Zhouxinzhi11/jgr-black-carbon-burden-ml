@@ -1,0 +1,174 @@
+JGR_Code_Release_Staging_v1.0.0/
+|-- configs/
+|   `-- paths.example.yaml
+|-- data/
+|   `-- README.md
+|-- docs/
+|   |-- archive_design.md
+|   |-- code_audit.csv
+|   |-- current_environment.csv
+|   |-- directory_tree.txt
+|   |-- excluded_files.csv
+|   |-- final_figure_inventory.csv
+|   |-- final_release_report.md
+|   |-- formal_output_coverage_summary.md
+|   |-- formal_output_numeric_verification.md
+|   |-- legacy_models_resolution.md
+|   |-- manual_confirmation_questions.md
+|   |-- manuscript_code_map.csv
+|   |-- manuscript_source_selection.md
+|   |-- P0_P1_manual_review_summary.md
+|   |-- POSP_LEVEL1_SOURCE_AUDIT.md
+|   |-- public_data_sources.csv
+|   |-- release_inclusion_changes.csv
+|   |-- restricted_input_interface.md
+|   |-- review_required.csv
+|   |-- review_required_count_reconciliation.md
+|   |-- review_required_priority.csv
+|   |-- table_figure_reproduction_map.csv
+|   `-- table_s7_split_verification.md
+|-- figure_source_data/
+|   |-- figure_1_workflow.csv
+|   |-- figure_2_meanstate_performance.csv
+|   |-- figure_3_spatial_summary_only.csv
+|   |-- figure_4_daily_anomaly_performance.csv
+|   |-- figure_5_bounded_adjustment.csv
+|   |-- figure_s1_monthly_sampling_support.csv
+|   |-- figure_s2_valid_day_count_histograms.csv
+|   `-- figure_s3_spatial_common_support_summary_only.csv
+|-- manifests/
+|   |-- formal_checkpoint_manifest.csv
+|   |-- formal_run_manifest.csv
+|   |-- public_vs_restricted_manifest.csv
+|   |-- release_manifest.csv
+|   |-- review_required_manifest.csv
+|   |-- source_provenance.csv
+|   `-- withheld_derived_data_manifest.csv
+|-- metadata/
+|   |-- data_and_software_availability_draft.md
+|   |-- github_release_metadata.md
+|   |-- github_repository_description.md
+|   |-- reviewer_access_instructions.md
+|   |-- software_citation_draft.md
+|   |-- zenodo_public_code_metadata.json
+|   `-- zenodo_restricted_fused_data_metadata.json
+|-- results/
+|   |-- main_table_1_dataset_roles.csv
+|   |-- main_table_2_meanstate_performance.csv
+|   |-- main_table_3_daily_anomaly_performance.csv
+|   |-- main_table_4_bounded_adjustment.csv
+|   |-- si_table_s10_common_mask_audit.csv
+|   |-- si_table_s11_burden_scale_errors.csv
+|   |-- si_table_s12_bccmass_provenance.csv
+|   |-- si_table_s1_dataset_partitions.csv
+|   |-- si_table_s2_inventory_support_overlap.csv
+|   |-- si_table_s3_monthly_meanstate_r2.csv
+|   |-- si_table_s4_seasonal_regional_meanstate_r2.csv
+|   |-- si_table_s5_grouped_daily_anomaly_r2.csv
+|   |-- si_table_s6_bounded_adjustment_by_month.csv
+|   |-- si_table_s7a_area_weighted_performance.csv
+|   |-- si_table_s7b_area_weighted_contrasts.csv
+|   |-- si_table_s8_geographic_holdout.csv
+|   `-- si_table_s9_monthly_sampling_support.csv
+|-- scripts/
+|   |-- assemble_release_sources.py
+|   |-- build_release_audit.py
+|   |-- build_release_manifest.py
+|   |-- build_review_manifest.py
+|   |-- create_release_zip.py
+|   |-- finalize_rc2_review.py
+|   |-- generate_figure1_schematic.py
+|   |-- prepare_public_results.py
+|   |-- render_spatial_diagnostics.py
+|   |-- reproduce_tables_figures.py
+|   |-- validate_release.py
+|   |-- validate_restricted_data.py
+|   |-- verify_formal_outputs.py
+|   `-- verify_release_zip.py
+|-- src/
+|   |-- audits/
+|   |   |-- audit_2023_tensors.py
+|   |   |-- audit_anomaly_aef.py
+|   |   |-- audit_anomaly_cache.py
+|   |   |-- audit_anomaly_fire.py
+|   |   |-- audit_anomaly_meteorology.py
+|   |   |-- audit_anomaly_smoke.py
+|   |   |-- audit_bccmass_metadata.py
+|   |   |-- audit_bccmass_provenance.py
+|   |   |-- audit_bccmass_scale_trace.py
+|   |   |-- audit_binary_support.py
+|   |   |-- audit_burden_scale.py
+|   |   |-- audit_daily_tensors.py
+|   |   |-- audit_firms_metadata.py
+|   |   |-- audit_geographic_holdout_runs.py
+|   |   |-- audit_inventory_coordinate_stability.py
+|   |   |-- audit_inventory_daily_grid_consistency.py
+|   |   |-- audit_inventory_mask_overlap.py
+|   |   |-- audit_meanstate_cache.py
+|   |   |-- audit_meanstate_formal.py
+|   |   |-- audit_meanstate_formal_seed.py
+|   |   |-- audit_meanstate_smoke.py
+|   |   |-- audit_monthly_inventory_inputs.py
+|   |   |-- audit_sampling_support.py
+|   |   |-- audit_support_control_formal.py
+|   |   |-- audit_support_control_smoke.py
+|   |   |-- audit_support_geometry.py
+|   |   |-- preflight_anomaly_cache.py
+|   |   |-- preflight_binary_support.py
+|   |   |-- preflight_geographic_holdout.py
+|   |   |-- seal_geographic_holdout.py
+|   |   |-- seal_meanstate_inventory.py
+|   |   |-- summarize_bccmass_provenance.py
+|   |   `-- validate_support_permutation.py
+|   |-- checkpoint_compatibility/
+|   |   `-- meanstate_ablation_reference.py
+|   |-- preprocessing/
+|   |   |-- build_2023_tensors.py
+|   |   |-- build_daily_tensors.py
+|   |   |-- compute_holdout_meteorology_statistics.py
+|   |   |-- compute_training_meteorology_statistics.py
+|   |   |-- fetch_aef_grid.py
+|   |   |-- generate_grid_reference.py
+|   |   `-- process_aef_grid.py
+|   `-- workflows/
+|       |-- aggregate_anomaly_aef.py
+|       |-- aggregate_anomaly_fire.py
+|       |-- aggregate_anomaly_meteorology.py
+|       |-- aggregate_binary_support_control.py
+|       |-- aggregate_meanstate.py
+|       |-- aggregate_support_preserving_control.py
+|       |-- build_anomaly_cache.py
+|       |-- build_meanstate_cache.py
+|       |-- evaluate_anomaly_aef.py
+|       |-- evaluate_anomaly_fire.py
+|       |-- evaluate_anomaly_meteorology.py
+|       |-- evaluate_area_weighted_meanstate.py
+|       |-- evaluate_binary_support_control.py
+|       |-- evaluate_geographic_holdout.py
+|       |-- evaluate_meanstate.py
+|       |-- evaluate_support_preserving_control.py
+|       |-- export_bounded_adjustment_table.py
+|       |-- prepare_spatial_diagnostics.py
+|       |-- run_bounded_adjustment.py
+|       |-- run_bounded_adjustment_december.py
+|       |-- run_bounded_adjustment_november.py
+|       |-- summarize_bounded_adjustment_fixed.py
+|       |-- summarize_bounded_adjustment_sweep.py
+|       |-- train_binary_support_control.py
+|       |-- train_daily_anomaly.py
+|       |-- train_geographic_holdout.py
+|       |-- train_meanstate.py
+|       `-- train_support_preserving_control.py
+|-- tests/
+|   `-- smoke_test.py
+|-- .gitignore
+|-- .zenodo.json
+|-- CHANGELOG.md
+|-- CITATION.cff
+|-- environment.yml
+|-- LICENSE
+|-- LICENSE_PUBLIC_RESULTS_CC_BY_4.0.txt
+|-- LICENSES.md
+|-- MANIFEST_SHA256.txt
+|-- README.md
+`-- requirements.txt

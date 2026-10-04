@@ -1,0 +1,25 @@
+﻿section,Year-month,Analytical role,Source days,Mean daily grid coverage (%),Cells with ≥5 days,Evaluation-grid coverage (%),Jaccard of ≥5-day masks
+2022,2022-01,Unavailable in source,0,NA,NA,NA,NA
+2022,2022-02,Training,27,17.55,"53,544",25.75,1.000
+2022,2022-03,Training,31,17.93,"54,987",26.44,1.000
+2022,2022-04,Unavailable in source,0,NA,NA,NA,NA
+2022,2022-05,Training,30,17.94,"54,700",26.31,1.000
+2022,2022-06,Training,29,18.25,"54,701",26.31,1.000
+2022,2022-07,Excluded (<5 source days),1,0.32,0,0.00,NA*
+2022,2022-08,Training,31,17.83,"55,098",26.50,1.000
+2022,2022-09,Training,30,18.34,"55,115",26.51,1.000
+2022,2022-10,Unavailable in source,0,NA,NA,NA,NA
+2022,2022-11,Model-selection validation,30,17.26,"51,696",24.86,1.000
+2022,2022-12,Model-selection validation,31,13.65,"46,308",22.27,1.000
+2023,2023-01,External evaluation,29,17.40,"49,863",23.98,1.000
+2023,2023-02,External evaluation,28,19.32,"54,001",25.97,1.000
+2023,2023-03,External evaluation,29,15.30,"54,285",26.11,1.000
+2023,2023-04,External evaluation,30,17.56,"53,739",25.84,1.000
+2023,2023-05,External evaluation,31,18.54,"54,811",26.36,1.000
+2023,2023-06,External evaluation,30,19.67,"55,168",26.53,1.000
+2023,2023-07,External evaluation,31,19.61,"55,091",26.49,1.000
+2023,2023-08,External evaluation,31,19.74,"55,176",26.54,1.000
+2023,2023-09,External evaluation,30,20.20,"55,266",26.58,1.000
+2023,2023-10,External evaluation,31,20.18,"55,330",26.61,1.000
+2023,2023-11,External evaluation,30,17.96,"51,882",24.95,1.000
+2023,2023-12,External evaluation,31,16.29,"47,014",22.61,1.000

@@ -1,0 +1,9 @@
+﻿Month,Setting,Design,Log-space R² (Δ vs train mean),Log-space RMSE,Inventory-input log-RMSE,Mean |δ|
+2022-11,Train-mean prior,No offset,0.466 (+0.000),0.492,1.336,0.000
+2022-11,Ultra-conservative inverse,Δmax = 0.25; λδ = 0.1,0.491 (+0.025),0.480,1.349,0.152
+2022-11,Balanced inverse,Δmax = 0.50; λδ = 0.1,0.498 (+0.033),0.477,1.358,0.196
+2022-11,Original processed-prior reference,Reference input,0.508 (+0.042),0.472,0.000,N/A
+2022-12,Train-mean prior,No offset,0.525 (+0.000),0.468,1.592,0.000
+2022-12,Ultra-conservative inverse,Δmax = 0.25; λδ = 0.1,0.578 (+0.053),0.441,1.590,0.190
+2022-12,Balanced inverse,Δmax = 0.50; λδ = 0.1,0.598 (+0.073),0.430,1.615,0.256
+2022-12,Original processed-prior reference,Reference input,0.591 (+0.067),0.434,0.000,N/A

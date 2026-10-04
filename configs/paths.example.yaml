@@ -1,0 +1,18 @@
+# Copy this file to a private location before editing. Do not commit real paths.
+restricted_inputs:
+  restricted_archive_root: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER
+  meanstate_cache: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER/inputs/meanstate_cache/07_phase2_meanstate_fullmonth_trainonly_union
+  anomaly_cache: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER/inputs/anomaly_cache/08_phase2_anomaly_clean_trainonly_union
+  anomaly_aef_source_root_2022: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER/inputs/anomaly_aef_source_tensors/2022
+  anomaly_aef_source_root_2023: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER/inputs/anomaly_aef_source_tensors/2023
+  checkpoint_root: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER_IF_SEPARATELY_AUTHORIZED
+private_outputs:
+  run_root: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER
+  audit_root: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER
+  bounded_adjustment_root: TO_BE_CONFIGURED_BY_AUTHORIZED_RESEARCHER
+public_inputs:
+  aggregate_results: results
+  figure_source_data: figure_source_data
+public_outputs:
+  reproduced: reproduced
+formal_seeds: [42, 43, 44]

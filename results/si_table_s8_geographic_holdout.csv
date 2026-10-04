@@ -1,0 +1,13 @@
+﻿Configuration,Seed,Pooled R²,Pooled RMSE,Pooled bias,Area-weighted R²
+Meteorology-only,42,-0.73064505,1.20980368,-0.51095497,-0.87635008
+Meteorology-only,43,-0.96116928,1.28785936,-0.53356125,-1.12355291
+Meteorology-only,44,-1.00783577,1.30309174,-0.56006248,-1.16120248
+Binary support + meteorology,42,-0.73073915,1.20983657,-0.43030137,-0.85367246
+Binary support + meteorology,43,-0.68761120,1.19466763,-0.37853838,-0.80643301
+Binary support + meteorology,44,-0.79119477,1.23078531,-0.50241959,-0.91841956
+Inventory + meteorology,42,-0.84782391,1.25008974,-0.45188392,-1.00692815
+Inventory + meteorology,43,-0.45694362,1.11002375,-0.43869946,-0.56903826
+Inventory + meteorology,44,-0.10946708,0.96865273,-0.29173490,-0.18292219
+Meteorology-only,mean ± SD,−0.8999 ± 0.1484,1.2669 ± 0.0500,−0.5349 ± 0.0246,−1.0537 ± 0.1547
+Binary support + meteorology,mean ± SD,−0.7365 ± 0.0520,1.2118 ± 0.0181,−0.4371 ± 0.0622,−0.8595 ± 0.0562
+Inventory + meteorology,mean ± SD,−0.4714 ± 0.3694,1.1096 ± 0.1407,−0.3941 ± 0.0889,−0.5863 ± 0.4123

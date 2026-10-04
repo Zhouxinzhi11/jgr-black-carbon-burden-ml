@@ -1,0 +1,9 @@
+Public Aggregate Results and Source Data License
+
+The public non-sensitive aggregate results in `results/` and public table/figure source-data CSV files in `figure_source_data/` are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+License deed and legal code: https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution: Zhou, X.; Li, Z.; and Cai, Q. Public aggregate results and source data for “Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment”, version 1.0.0. Zenodo DOI: 10.5281/zenodo.23139187.
+
+This license does not apply to the separate restricted fused-data archive or any row-level, pixel-level, grid-cell-level, exact space-time, target, predictor, or restricted spatial-array content.

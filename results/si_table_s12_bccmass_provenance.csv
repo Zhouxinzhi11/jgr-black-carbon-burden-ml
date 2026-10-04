@@ -1,0 +1,18 @@
+﻿Audit quantity,Result
+Best-tested spatial and temporal candidate,Aligned native grid cell with linear interpolation between hourly record centers
+Paired records,100
+Sampled dates,10
+Records per date,10
+Maximum absolute latitude discrepancy,0°
+Maximum absolute longitude discrepancy,0°
+Temporal bracketing interval,1 h
+Normalized RMSE,2.367%
+Median symmetric relative error,0.515%
+95th-percentile symmetric relative error,5.013%
+Pearson correlation r,0.999567
+Identity-line R²,0.999101
+Through-origin scale F = aM,1.00454
+Records within 1% error,65/100 (65%)
+Records within 5% error,95/100 (95%)
+Records within 10% error,99/100 (99%)
+Records within 20% error,100/100 (100%)

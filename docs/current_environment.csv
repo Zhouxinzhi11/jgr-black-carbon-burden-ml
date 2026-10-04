@@ -1,0 +1,14 @@
+component,version,status
+Python,3.9.21,observed rc3 lightweight-validation runtime
+numpy,1.26.4,observed rc3 lightweight-validation runtime
+pandas,2.2.3,observed rc3 lightweight-validation runtime
+torch,2.8.0+cpu,observed rc3 lightweight-validation runtime; full CUDA training not executed
+scikit-learn,1.6.1,observed rc3 lightweight-validation runtime
+matplotlib,3.9.2,observed rc3 lightweight-validation runtime
+PyYAML,6.0.2,observed rc3 lightweight-validation runtime
+xarray,2023.6.0,installed; restricted-data large preprocessing not executed
+netCDF4,1.7.2,installed; restricted-data large preprocessing not executed
+earthengine-api,1.6.9,installed; no external download executed
+svgwrite,1.4.3,observed rc3 lightweight-validation runtime
+CairoSVG,2.8.2,observed rc3 lightweight-validation runtime
+python-docx,1.2.0,installed; manuscript not modified

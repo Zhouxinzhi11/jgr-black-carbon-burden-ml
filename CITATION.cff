@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this software release and the associated manuscript."
+title: "Code and Public Aggregate Source Data for: Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment"
+type: software
+version: 1.0.0
+date-released: 2026-10-04
+doi: 10.5281/zenodo.23139187
+repository-code: "https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml"
+url: "https://doi.org/10.5281/zenodo.23139187"
+authors:
+  - family-names: Zhou
+    given-names: Xinzhi
+    affiliation: "Aerospace Information Research Institute, Chinese Academy of Sciences; School of Emergency Management Science and Engineering, University of Chinese Academy of Sciences"
+  - family-names: Li
+    given-names: Zhengqiang
+    affiliation: "Aerospace Information Research Institute, Chinese Academy of Sciences; State Key Laboratory of Spatial Datum, Faculty of Geographical Science and Engineering, Henan University"
+  - family-names: Cai
+    given-names: Qixiang
+    affiliation: "Aerospace Information Research Institute, Chinese Academy of Sciences"
+abstract: "Inspected workflows, audits, manifests, and public aggregate source data for the associated JGR: Atmospheres manuscript."
+keywords:
+  - black carbon
+  - column burden
+  - machine learning
+  - mean state
+  - daily anomaly
+  - provenance audit

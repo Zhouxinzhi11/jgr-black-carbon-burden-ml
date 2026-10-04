@@ -1,0 +1,39 @@
+{
+  "metadata_status": "DRAFT_CREATED_NOT_PUBLISHED",
+  "draft_url": "https://zenodo.org/deposit/23139189",
+  "upload_type": "dataset",
+  "title": "Restricted POSP-Centered Analysis-Ready Fused Derivative for: Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment",
+  "description": "Value-added analysis-ready fused derivative required by the formal workflows. GF-5(02) POSP Level 1 is a public upstream product; restriction applies to the composite fused derivative and revealing spatial arrays, not to POSP Level 1 itself.",
+  "creators": [
+    {
+      "name": "Zhou, Xinzhi",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences; School of Emergency Management Science and Engineering, University of Chinese Academy of Sciences"
+    },
+    {
+      "name": "Li, Zhengqiang",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences; State Key Laboratory of Spatial Datum, Faculty of Geographical Science and Engineering, Henan University"
+    },
+    {
+      "name": "Cai, Qixiang",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences"
+    }
+  ],
+  "version": "1.0.0",
+  "access_right": "restricted",
+  "doi": "10.5281/zenodo.23139189",
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.23139187",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "rights_statement": "Custom restricted rights: controlled editor/reviewer evaluation and approved scientific use only; no redistribution and no public-use license. MIT and CC BY 4.0 do not apply to the restricted fused derivative.",
+  "access_conditions": "Researchers must submit a reasoned scientific-use application. Access is decided by the corresponding author, in consultation with the data creators, conditional on an editor-approved restricted-access exception and the applicable data-rights decision; a no-redistribution agreement may be required.",
+  "notes": "UNPUBLISHED RESTRICTED DRAFT. The reviewer preview link is stored separately and is not recorded here."
+}

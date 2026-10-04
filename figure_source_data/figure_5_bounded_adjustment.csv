@@ -1,0 +1,5 @@
+﻿Setting,Bounded-adjustment design,R²,ΔR²,RMSE,Reference log-RMSE,Mean |δ|
+2022 training-mean reference,No offset,0.495,+0.000,0.480,1.464,0.000
+Narrow-bound adjustment,Δmax = 0.25; λδ = 0.1,0.534,+0.039,0.461,1.470,0.171
+Wide-bound adjustment,Δmax = 0.50; λδ = 0.1,0.548,+0.053,0.453,1.487,0.226
+Original monthly inventory reference,Original monthly sector-group reference,0.549,+0.054,0.453,0.000,N/A

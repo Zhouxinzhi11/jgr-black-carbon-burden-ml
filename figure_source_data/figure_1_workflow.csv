@@ -1,0 +1,4 @@
+﻿branch,inputs,target_or_output,reported_elements
+mean_state,inventory; monthly meteorology; controls,monthly mean log burden,Table 2; Figures 2-3
+daily_anomaly,meteorological anomalies; fire or AEF context,daily log-burden anomaly,Table 3; Figure 4
+bounded_adjustment,frozen joint mean-state model; channel offsets,reconstruction-deviation trade-off,Table 4; Figure 5

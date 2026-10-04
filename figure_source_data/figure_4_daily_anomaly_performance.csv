@@ -1,0 +1,7 @@
+﻿evaluation_split,Model configuration,Input design,Anomaly R²,RMSE,Correlation
+2022_model_selection_validation,Meteorology-only,Daily meteorological anomalies + monthly mean meteorology,0.0051 ± 0.0026,0.3207 ± 0.0004,0.0877 ± 0.0197
+2022_model_selection_validation,Meteorology + fire,Daily meteorological and fire anomalies + monthly mean meteorology and fire,0.0128 ± 0.0011,0.3195 ± 0.0002,0.1228 ± 0.0126
+2022_model_selection_validation,Meteorology + AEF,Daily meteorological anomalies + annual AEF + monthly mean meteorology,0.0106 ± 0.0031,0.3198 ± 0.0005,0.1241 ± 0.0039
+2023_temporal_holdout,Meteorology-only,Daily meteorological anomalies + monthly mean meteorology,0.0026 ± 0.0007,0.3893 ± 0.0001,0.0574 ± 0.0112
+2023_temporal_holdout,Meteorology + fire,Daily meteorological and fire anomalies + monthly mean meteorology and fire,0.0191 ± 0.0042,0.3861 ± 0.0008,0.1394 ± 0.0151
+2023_temporal_holdout,Meteorology + AEF,Daily meteorological anomalies + annual AEF + monthly mean meteorology,0.0062 ± 0.0020,0.3886 ± 0.0004,0.0954 ± 0.0032

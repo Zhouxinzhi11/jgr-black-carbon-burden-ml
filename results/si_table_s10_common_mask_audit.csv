@@ -1,0 +1,7 @@
+﻿Configuration,Seeds,Reports,Same manifest,2022 validation pairs,2023 external pairs,Common-mask check
+Inventory only,"42, 43, 44",3,Yes,"98,004","641,626",Pass
+Meteorology only,"42, 43, 44",3,Yes,"98,004","641,626",Pass
+Joint inventory + meteorology,"42, 43, 44",3,Yes,"98,004","641,626",Pass
+Cyclic displacement + meteorology,"42, 43, 44",3,Yes,"98,004","641,626",Pass
+Support-preserving permutation + meteorology,"42, 43, 44",3,Yes,"98,004","641,626",Pass
+Binary support + meteorology,"42, 43, 44",3,Yes,"98,004","641,626",Pass

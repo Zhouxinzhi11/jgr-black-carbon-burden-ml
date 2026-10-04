@@ -1,0 +1,3 @@
+﻿Evaluation split,Joint − cyclic-shift,Joint − support-preserving,Joint − meteorology-only
+2022 held-out model-selection validation,+0.0460 ± 0.0188,−0.0004 ± 0.0124,+0.0369 ± 0.0538
+2023 external/proxy evaluation,+0.0747 ± 0.0492,+0.0212 ± 0.0901,+0.0093 ± 0.0913

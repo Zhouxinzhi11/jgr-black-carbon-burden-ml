@@ -1,0 +1,49 @@
+{
+  "metadata_status": "DRAFT_CREATED_NOT_PUBLISHED",
+  "draft_url": "https://zenodo.org/deposit/23139187",
+  "upload_type": "software",
+  "title": "Code and Public Aggregate Source Data for: Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment",
+  "description": "Author-written code, release manifests, environment files, public aggregate results, and non-sensitive table/figure source data. Restricted fused derivatives are a separate record.",
+  "creators": [
+    {
+      "name": "Zhou, Xinzhi",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences; School of Emergency Management Science and Engineering, University of Chinese Academy of Sciences"
+    },
+    {
+      "name": "Li, Zhengqiang",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences; State Key Laboratory of Spatial Datum, Faculty of Geographical Science and Engineering, Henan University"
+    },
+    {
+      "name": "Cai, Qixiang",
+      "affiliation": "Aerospace Information Research Institute, Chinese Academy of Sciences"
+    }
+  ],
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "MIT",
+  "licenses": [
+    {
+      "id": "MIT",
+      "scope": "author-written code and package documentation"
+    },
+    {
+      "id": "CC-BY-4.0",
+      "scope": "public aggregate results and public table/figure source-data CSV files"
+    }
+  ],
+  "doi": "10.5281/zenodo.23139187",
+  "repository_url": "https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.23139189",
+      "relation": "isSupplementedBy",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "UNPUBLISHED DRAFT. The mixed-license scopes are defined in LICENSES.md. No GitHub tag/release or Zenodo publication has been created."
+}

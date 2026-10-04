@@ -1,0 +1,9 @@
+﻿Data role,Month,Target-valid cells,P(inventory support | target),"J(source availability, inventory support)","J(inventory support, target)"
+Training,02,"53,544",0.7641,0.7588,0.7441
+Training,03,"54,987",0.7504,0.7520,0.7360
+Training,05,"54,700",0.7505,0.7514,0.7341
+Training,06,"54,701",0.7496,0.7522,0.7318
+Training,08,"55,098",0.7507,0.7527,0.7363
+Training,09,"55,115",0.7508,0.7529,0.7369
+Model-selection validation,11,"51,696",0.7960,0.7921,0.7788
+Model-selection validation,12,"46,308",0.8529,0.8465,0.8263

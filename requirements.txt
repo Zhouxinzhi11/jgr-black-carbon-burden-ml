@@ -1,0 +1,14 @@
+# Minimal imported dependency set pinned to the prior full release-preparation snapshot.
+# It is not claimed as the historical training lockfile. Versions actually observed
+# during the rc3 lightweight checks are recorded in docs/current_environment.csv.
+numpy==1.26.4
+torch==2.8.0
+matplotlib==3.9.2
+xarray==2023.6.0
+netCDF4==1.7.2
+pandas==2.2.3
+earthengine-api==1.6.9
+svgwrite==1.4.3
+CairoSVG==2.8.2
+python-docx==1.2.0
+PyYAML==6.0.2

@@ -1,0 +1,7 @@
+﻿item,v1_status,rc2_status,reason,scientific_effect
+src/legacy_models/,Included under ambiguous legacy label,Renamed to src/checkpoint_compatibility/,Clarifies that the unchanged model definition exists only for historical checkpoint loading.,None
+405 REVIEW_REQUIRED code-tree records,Single unprioritized review list,P0/P1/P2 priority and resolved rc2 disposition added,Pre-submission review requested; authoritative classification remains REVIEW_REQUIRED.,None
+10 restricted derived-data candidates,Combined with review-only manifest,Separated as withheld-derived-data,Prevents contamination of the four code classification counts.,None
+Formal output mapping,Crosswalk present,Unique 24-item table/figure reproduction map and coverage summary added,Uses confirmed Tables 1–4/Figures 1–5 and Tables S1–S12/Figures S1–S3 baseline.,None
+Table S7,Two CSVs described as panels,Verified as Part A and Part B of one logical Table S7,"Headers, all values, SI labels, and extraction code were checked.",None
+Formal figure directory,Not inventoried in release,Read-only inventory/check recorded; no images copied,Reference-only verification without embedding local paths or authored images.,None
