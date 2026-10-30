@@ -1,5 +1,12 @@
 # Changelog
 
+## Documentation correction - 2026-10-30
+
+- Corrected current repository and metadata descriptions to show the already-published v1.0.0 software release and the published main/recovery data records with restricted files.
+- Matched the sealed manuscript's 23 formal outputs: 16 tables and 7 figures. Classified the retained legacy Figure 5 bounded-adjustment visualization separately as an additional archive product corresponding to Main Table 4 and SI Table S6.
+- Updated only output-coverage validation rules and documentation; retained all 17 physical table CSVs, 8 figure-source CSVs, scientific code, seeds, splits, algorithms and numeric results unchanged.
+- Preserved the frozen v1.0.0 tag, release ZIPs and DOIs. The correction does not constitute a new software release or journal submission. Earlier entries below describe their dated preparation state.
+
 ## 1.0.0 - 2026-10-04 (formal release preparation)
 
 - Established the private GitHub repository `https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml` and two separate unpublished Zenodo drafts with reserved DOIs `10.5281/zenodo.23139187` and `10.5281/zenodo.23139189`.

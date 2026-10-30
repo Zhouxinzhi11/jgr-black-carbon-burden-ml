@@ -1,5 +1,7 @@
 # v1.0.0 technical release report
 
+Documentation correction on 2026-10-30: the repository/release and software record are now public; the main data record and transport recovery supplement have public metadata and restricted files. The current manuscript baseline is 16 tables and 7 figures (23 formal outputs), plus one separately classified archived bounded-adjustment visualization. The historical release-preparation report below is retained as dated evidence; its former publication state and 24-output wording do not describe the current manuscript. See `docs/publication_and_output_map_correction_20261030.md` and the current two crosswalks. Frozen ZIPs, the v1.0.0 tag and all scientific values are unchanged.
+
 ## Scope inherited without re-audit
 
 The formal package inherits the completed conservative audit. The code-tree scope is 1,222 files: CORE 33, SUPPORTING 61, LEGACY_EXCLUDED 723, and REVIEW_REQUIRED 405. Ten additional withheld-derived-data objects are outside the code tree and outside those four class totals. The combined consideration scope is 1,232 objects under two distinct statistical denominators. All P0 decisions remain resolved and unchanged.

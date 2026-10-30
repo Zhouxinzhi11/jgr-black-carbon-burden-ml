@@ -2,7 +2,9 @@
 
 This archive accompanies the manuscript *Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment*. It packages the inspected code paths for mean-state, geographic-holdout, daily-anomaly, negative-control, provenance-audit, and bounded-adjustment analyses, together with public aggregate tables and figure source data.
 
-This is the validated v1.0.0 release package prepared in the private GitHub repository [https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml](https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml). The corresponding Zenodo software record is an unpublished draft with reserved DOI `10.5281/zenodo.23139187`. Author-written code is licensed under MIT; public aggregate results and public table/figure source-data CSV files are licensed under CC BY 4.0. The repository and Zenodo record remain non-public until explicit release authorization.
+The repository and [v1.0.0 release](https://github.com/Zhouxinzhi11/jgr-black-carbon-burden-ml/releases/tag/v1.0.0) are public. The published software and public aggregate results are archived at <https://doi.org/10.5281/zenodo.23139187>. Author-written code is licensed under MIT; public aggregate results and public table/figure source-data CSV files are licensed under CC BY 4.0. The main fused-data record (<https://doi.org/10.5281/zenodo.23139189>) and its transport recovery supplement (<https://doi.org/10.5281/zenodo.23463888>) have public metadata and restricted files, with no automatic public-release embargo.
+
+Documentation was corrected on 2026-10-30 to reflect publication and the sealed manuscript's four main figures. The frozen v1.0.0 tag and published ZIPs are unchanged. See [the documentation correction](docs/publication_and_output_map_correction_20261030.md) for the distinction between current manuscript outputs and the additional archived visualization.
 
 ## Scientific scope
 
@@ -10,7 +12,7 @@ The mean-state branch models monthly mean log burden using an eight-channel proc
 
 The bounded-adjustment experiment is a numerical flexibility diagnostic. It is not an emission inversion or physical retrieval. Likewise, the three training seeds quantify optimization variability and are not a significance test.
 
-The detailed manuscript-to-code crosswalk is in `docs/manuscript_code_map.csv`. The confirmed formal-output baseline is Main Tables 1–4, Main Figures 1–5, SI Tables S1–S12, and SI Figures S1–S3. `docs/table_figure_reproduction_map.csv` gives one unique record for every one of these 24 logical outputs.
+The detailed manuscript-to-code crosswalk is in `docs/manuscript_code_map.csv`. The current formal-output baseline is Main Tables 1–4, Main Figures 1–4, SI Tables S1–S12, and SI Figures S1–S3: 16 tables and 7 figures, or 23 logical outputs. `docs/table_figure_reproduction_map.csv` maps these 23 outputs one to one. `docs/additional_archive_outputs.csv` separately identifies the bounded-adjustment visualization formerly labeled Figure 5; it is an additional archive product corresponding to Main Table 4 and SI Table S6, not a fifth figure in the current manuscript.
 
 ## Directory layout
 
@@ -33,7 +35,7 @@ The detailed manuscript-to-code crosswalk is in `docs/manuscript_code_map.csv`. 
 
 GF-5(02) POSP Level 1 is a public data source available from CRESDA (<https://data.cresda.cn/>); registration may be required. POSP I380 is used only to define record availability. This study did not use the public POSP Level 2 product or DOI `10.57760/sciencedb.14748` as its I380 source.
 
-The complete POSP-centered analysis-ready fused derivative is not included here. It is prepared as a separate restricted-review archive. Without authorized access, users can run the synthetic smoke tests and reproduce the 16 tables and eight aggregate figure products from public packaged results, but cannot rerun full training or regenerate pointwise spatial products. Full training was not rerun during v1.0.0 release preparation.
+The complete POSP-centered analysis-ready fused derivative is not included here. It is available for controlled editor/reviewer access through the two restricted data records. Without authorized access, users can run the synthetic smoke tests and reproduce the 16 tables and eight aggregate figure products from public packaged results: seven products corresponding to the current manuscript figures and one additional bounded-adjustment visualization. Main Figure 3 and SI Figure S3 products are summary-only. Full training and pointwise spatial products require authorized inputs; full training was not rerun during v1.0.0 release preparation.
 
 Formal training seeds are **42, 43, and 44**. The formal checkpoint files are not included; their project-relative identifiers and SHA-256 values are recorded in `manifests/formal_checkpoint_manifest.csv`.
 
@@ -69,7 +71,7 @@ The original scientific scripts use explicit CLI paths rather than silently disc
 
 ## Public aggregate reproduction
 
-Recreate the 17 packaged physical table CSVs and eight aggregate-only figure renderings:
+Recreate the 17 packaged physical table CSVs and eight aggregate-only figure renderings (seven current-manuscript products, including two summary-only spatial products, plus one additional archived bounded-adjustment visualization):
 
 ```text
 python scripts/reproduce_tables_figures.py --release-root . --output-dir reproduced
@@ -81,7 +83,7 @@ Tables only:
 python scripts/reproduce_tables_figures.py --release-root . --output-dir reproduced --tables-only
 ```
 
-The 17 table files represent 16 logical tables: SI Table S7 is one formal table with verified Part A and Part B CSVs. Main Figure 3 and SI Figure S3 are intentionally summary-only in this archive because pointwise/cellwise source arrays are available only through the restricted-access record, subject to the approved access conditions. The generated PNGs are transparent aggregate reconstructions, not claims of pixel-identical reproduction of the manuscript layouts.
+The 17 table files represent 16 logical tables: SI Table S7 is one formal table with verified Part A and Part B CSVs. The retained `figure_5_bounded_adjustment.csv` is byte-identical to the Main Table 4 CSV; its legacy filename is preserved for compatibility with the unchanged reproduction script. It does not identify a current Main Figure 5. Main Figure 3 and SI Figure S3 are intentionally summary-only because pointwise/cellwise source arrays are available only through the restricted-access records, subject to the approved access conditions. Generated PNGs reproduce aggregate content rather than the authored manuscript layouts.
 
 Verify the formal-output coverage, Table S7 split, and public aggregate closure:
 
@@ -145,7 +147,7 @@ Expected inputs include gridded NetCDF variables, PyTorch monthly/daily cache te
 
 ## Reproducibility boundary
 
-Public aggregate tables and non-spatial summary figures can be regenerated directly with `scripts/reproduce_tables_figures.py`. Source-data tables for Main Figures 1–5 and SI Figures S1–S3 are provided, but Main Figure 3 and SI Figure S3 are limited to publishable summary statistics. The authored figure directory was used only as a read-only verification reference; no manuscript image or machine-specific path is stored in this archive.
+Public aggregate tables and non-spatial summary figures can be regenerated directly with `scripts/reproduce_tables_figures.py`. Source-data tables for current Main Figures 1–4 and SI Figures S1–S3 are provided, with Main Figure 3 and SI Figure S3 limited to publishable summary statistics. The additional bounded-adjustment source CSV remains available under its legacy Figure 5 filename. The authored figure directory was used only as a read-only verification reference; no manuscript image or machine-specific path is stored in this archive.
 
 For all data-dependent scientific workflows: **Code path inspected and release-packaged; full execution requires authorized access to the restricted fused input data.** Full training, large preprocessing, and restricted-data evaluation were not re-run during release preparation.
 
@@ -159,11 +161,11 @@ python scripts/validate_release.py --release-root .
 python scripts/validate_restricted_data.py --restricted-root <AUTHORIZED_RESTRICTED_ARCHIVE_ROOT> --quick
 ```
 
-The validator checks required files, Python syntax, internal imports, CSV structure, local absolute paths, credential/account indicators, forbidden restricted filenames, code-map references, README options, the 1,222/405 code-audit counts, the separate 10-item withheld-derived-data scope, formal-output coverage, the release manifest, and SHA-256 values.
+The validator checks required files, Python syntax, internal imports, CSV structure, local absolute paths, credential/account indicators, forbidden restricted filenames, code-map references, README options, the 1,222/405 code-audit counts, the separate 10-item withheld-derived-data scope, the 23 current formal outputs plus the separately classified additional visualization, the file manifest, and SHA-256 values. Run archive validation from an export without a `.git` directory; the current branch's manifests describe that branch export, while the frozen v1.0.0 ZIP retains its original manifests.
 
 ## Citation and licenses
 
-Citation metadata are in `CITATION.cff`, `.zenodo.json`, and `metadata/software_citation_draft.md`. The reserved software DOI is `10.5281/zenodo.23139187` and the separate restricted-data DOI is `10.5281/zenodo.23139189`; neither record has been published. Author-written code is MIT licensed through `LICENSE`. Public aggregate results and public table/figure source-data CSV files are CC BY 4.0 through `LICENSE_PUBLIC_RESULTS_CC_BY_4.0.txt`. `LICENSES.md` defines the directory-level scopes. The separate restricted fused-data archive has no public redistribution license.
+Citation metadata are in `CITATION.cff`, `.zenodo.json`, and `metadata/software_citation_draft.md`. The published software DOI is `10.5281/zenodo.23139187`; the separate main restricted-data DOI is `10.5281/zenodo.23139189`, with transport recovery supplement `10.5281/zenodo.23463888`. Author-written code is MIT licensed through `LICENSE`. Public aggregate results and public table/figure source-data CSV files are CC BY 4.0 through `LICENSE_PUBLIC_RESULTS_CC_BY_4.0.txt`. `LICENSES.md` defines the directory-level scopes. Restricted fused data have custom restricted rights and no public redistribution license. Publication of their metadata has not granted public access to their files or established editorial approval of the requested restricted-access exception.
 
 ## Audit status
 

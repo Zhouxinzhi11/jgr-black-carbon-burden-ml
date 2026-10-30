@@ -37,6 +37,8 @@ REQUIRED = (
     "docs/legacy_models_resolution.md",
     "docs/final_figure_inventory.csv",
     "docs/table_figure_reproduction_map.csv",
+    "docs/additional_archive_outputs.csv",
+    "docs/publication_and_output_map_correction_20261030.md",
     "docs/formal_output_coverage_summary.md",
     "docs/formal_output_numeric_verification.md",
     "docs/table_s7_split_verification.md",
@@ -237,17 +239,29 @@ def check_rc2_scope_and_outputs(root: Path, errors: list[str]) -> None:
         elements = [row["formal_element"] for row in rows]
         expected_elements = {
             *(f"Table {number}" for number in range(1, 5)),
-            *(f"Figure {number}" for number in range(1, 6)),
+            *(f"Figure {number}" for number in range(1, 5)),
             *(f"Table S{number}" for number in range(1, 13)),
             *(f"Figure S{number}" for number in range(1, 4)),
         }
-        if len(elements) != 24 or len(set(elements)) != 24 or set(elements) != expected_elements:
-            errors.append("Formal output map does not contain 24 unique expected elements")
+        if len(elements) != 23 or len(set(elements)) != 23 or set(elements) != expected_elements:
+            errors.append("Formal output map does not contain 23 unique current manuscript elements")
         for row in rows:
             for item in row["physical_source_files"].split(";"):
                 candidate = item.strip()
                 if candidate and not (root / candidate).is_file():
                     errors.append(f"Formal output source missing ({row['formal_element']}): {candidate}")
+
+    extra_path = root / "docs" / "additional_archive_outputs.csv"
+    if extra_path.is_file():
+        extra = list(csv.DictReader(extra_path.open("r", encoding="utf-8-sig", newline="")))
+        if len(extra) != 1 or extra[0].get("archive_output") != "bounded_adjustment_visualization" or extra[0].get("publication_status") != "ARCHIVE_ONLY":
+            errors.append("Additional visualization is not separately classified as ARCHIVE_ONLY")
+        else:
+            if {item.strip() for item in extra[0]["related_manuscript_elements"].split(";")} != {"Table 4", "Table S6"}:
+                errors.append("Additional visualization has an incorrect current-manuscript cross-reference")
+            candidate = extra[0]["physical_source_files"]
+            if candidate != "figure_source_data/figure_5_bounded_adjustment.csv" or not (root / candidate).is_file():
+                errors.append("Additional visualization source missing or changed")
 
 
 def check_manifest(root: Path, errors: list[str], check_sha: bool) -> None:

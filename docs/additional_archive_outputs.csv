@@ -1,0 +1,2 @@
+archive_output,legacy_label,publication_status,related_manuscript_elements,physical_source_files,archive_entry,reproduction_level,limitations
+bounded_adjustment_visualization,Legacy Figure 5,ARCHIVE_ONLY,Table 4; Table S6,figure_source_data/figure_5_bounded_adjustment.csv,scripts/reproduce_tables_figures.py,NUMERIC_EXACT_LAYOUT_APPROXIMATE,Additional archived visualization; not a fifth main-text figure in the sealed manuscript. Same targets were used for adjustment and evaluation; this is not an emission inversion validation.

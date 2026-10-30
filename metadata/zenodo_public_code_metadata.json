@@ -1,6 +1,6 @@
 {
-  "metadata_status": "DRAFT_CREATED_NOT_PUBLISHED",
-  "draft_url": "https://zenodo.org/deposit/23139187",
+  "metadata_status": "PUBLISHED_METADATA_WITH_PUBLIC_FILES",
+  "record_url": "https://zenodo.org/records/23139187",
   "upload_type": "software",
   "title": "Code and Public Aggregate Source Data for: Cross-Year Associations Between a Lagged Emission Inventory and Reanalysis-Derived Black Carbon Column Burden: A Multiscale Machine Learning Assessment",
   "description": "Author-written code, release manifests, environment files, public aggregate results, and non-sensitive table/figure source data. Restricted fused derivatives are a separate record.",
@@ -45,5 +45,5 @@
       "scheme": "doi"
     }
   ],
-  "notes": "UNPUBLISHED DRAFT. The mixed-license scopes are defined in LICENSES.md. No GitHub tag/release or Zenodo publication has been created."
+  "notes": "Published v1.0.0. Author-written code is MIT licensed; public aggregate results and source-data CSVs are CC BY 4.0 as defined in LICENSES.md. The current manuscript has 16 tables and 7 figures; the eighth archived aggregate figure product is an additional bounded-adjustment visualization corresponding to Table 4 and SI Table S6. See docs/publication_and_output_map_correction_20261030.md. The frozen v1.0.0 files are unchanged."
 }

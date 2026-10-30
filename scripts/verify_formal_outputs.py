@@ -10,7 +10,7 @@ from pathlib import Path
 
 EXPECTED_ELEMENTS = {
     *(f"Table {number}" for number in range(1, 5)),
-    *(f"Figure {number}" for number in range(1, 6)),
+    *(f"Figure {number}" for number in range(1, 5)),
     *(f"Table S{number}" for number in range(1, 13)),
     *(f"Figure S{number}" for number in range(1, 4)),
 }
@@ -37,10 +37,18 @@ def main() -> int:
 
     mapping = rows(root / "docs" / "table_figure_reproduction_map.csv")
     elements = [row["formal_element"] for row in mapping]
-    if len(elements) != 24 or len(set(elements)) != 24 or set(elements) != EXPECTED_ELEMENTS:
-        errors.append("Formal output map is not a one-to-one map of the expected 24 logical outputs")
+    if len(elements) != 23 or len(set(elements)) != 23 or set(elements) != EXPECTED_ELEMENTS:
+        errors.append("Formal output map is not a one-to-one map of the expected 23 current manuscript outputs")
     if any(row["verification_result"] != "PASS" for row in mapping):
         errors.append("Formal output map contains a non-PASS verification result")
+
+    extra = rows(root / "docs" / "additional_archive_outputs.csv")
+    if len(extra) != 1 or extra[0]["archive_output"] != "bounded_adjustment_visualization" or extra[0]["publication_status"] != "ARCHIVE_ONLY":
+        errors.append("The additional bounded-adjustment visualization must be classified separately as ARCHIVE_ONLY")
+    elif set(item.strip() for item in extra[0]["related_manuscript_elements"].split(";")) != {"Table 4", "Table S6"}:
+        errors.append("The additional bounded-adjustment visualization must map to Table 4 and Table S6")
+    elif extra[0]["physical_source_files"] != "figure_source_data/figure_5_bounded_adjustment.csv":
+        errors.append("The retained additional visualization source identifier changed")
 
     exact_pairs = (
         ("results/main_table_2_meanstate_performance.csv", "figure_source_data/figure_2_meanstate_performance.csv"),
@@ -84,7 +92,10 @@ def main() -> int:
     print("FORMAL_OUTPUT_VERIFICATION=PASS")
     print("LOGICAL_TABLES=16")
     print("PHYSICAL_TABLE_CSVS=17")
-    print("LOGICAL_FIGURES=8")
+    print("CURRENT_MANUSCRIPT_OUTPUTS=23")
+    print("LOGICAL_FIGURES=7")
+    print("ARCHIVED_AGGREGATE_FIGURE_PRODUCTS=8")
+    print("ADDITIONAL_ARCHIVE_VISUALIZATIONS=1")
     print("TABLE_S7=ONE_LOGICAL_TABLE_TWO_VERIFIED_PART_FILES")
     print("REVIEW_REQUIRED=405")
     print("WITHHELD_DERIVED_DATA=10")
